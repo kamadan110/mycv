@@ -1,0 +1,101 @@
+ext {
+
+    //UI
+    def materialDesignVersion = '1.3.0'
+    def recyclerviewVersion = '1.1.0'
+    def constraintLayoutVersion = '2.0.4'
+    def swipeRefreshLayoutVersion = '1.1.0'
+
+    //Core
+    def appCompatVersion = '1.2.0'
+    def coreKtxVersion = '1.3.2'
+
+    //Reactive
+    def rxVersion = '3.0.0'
+
+    //DI
+    def koinVersion = '2.1.6'
+
+    //glide
+    def glideVersion = '4.11.0'
+
+    //navigation
+    def navigationVersion = '2.3.3'
+
+    //lifecycle
+    def lifecycleVersion = '2.2.0'
+
+    //network
+    def retrofitVersion = '2.9.0'
+    def okHttpVersion = '4.9.0'
+    def interceptorVersion = '4.9.0'
+    def gsonVersion = '2.8.5'
+
+    def roomVersion = '2.3.0-beta02'
+
+    def mockkVersion = '1.10.0'
+
+    coreDependencies = [
+            appCompat   : "androidx.appcompat:appcompat:$appCompatVersion",
+            coreKtx     : "androidx.core:core-ktx:$coreKtxVersion",
+            kotlinStdlib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    ]
+
+    uiDependencies = [
+            constraintlayout  : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            materialDesign    : "com.google.android.material:material:$materialDesignVersion",
+            recyclerview      : "androidx.recyclerview:recyclerview:$recyclerviewVersion",
+            glide             : "com.github.bumptech.glide:glide:$glideVersion",
+            swiperefreshlayout: "androidx.swiperefreshlayout:swiperefreshlayout:$swipeRefreshLayoutVersion",
+            threetenabp       : 'com.jakewharton.threetenabp:threetenabp:1.3.0'
+    ]
+
+
+    dataBaseDependencies = [
+            runtime: "androidx.room:room-runtime:$roomVersion",
+            ktx    : "androidx.room:room-ktx:$roomVersion",
+            rxRoom : "androidx.room:room-rxjava3:$roomVersion"
+    ]
+    roomAnnotaionProcessor = "androidx.room:room-compiler:$roomVersion"
+
+    networkDependencies = [
+            retrofit             : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            converterGson        : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitAdapterRxJava: "com.squareup.retrofit2:adapter-rxjava3:$retrofitVersion",
+            okhttp               : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+            interceptor          : "com.squareup.okhttp3:logging-interceptor:$interceptorVersion",
+            gson                 : "com.google.code.gson:gson:$gsonVersion"
+    ]
+
+
+    lifecycleDependencies = [
+            viewmodel: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
+            livedata : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
+            runtime  : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion",
+            common   : "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
+    ]
+
+    navigationDependencies = [
+            fragment: "androidx.navigation:navigation-fragment-ktx:$navigationVersion",
+            ui      : "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+    ]
+
+    rxDependencies = [
+            rxKotlin : "io.reactivex.rxjava3:rxkotlin:$rxVersion",
+            rxAndroid: "io.reactivex.rxjava3:rxandroid:$rxVersion",
+            rxJava   : "io.reactivex.rxjava3:rxjava:$rxVersion"
+
+    ]
+
+    diDependencies = [
+            koinAndroid: "org.koin:koin-android:$koinVersion",
+            viewModel  : "org.koin:koin-androidx-viewmodel:$koinVersion",
+            scope      : "org.koin:koin-androidx-scope:$koinVersion"
+    ]
+
+    testDependencies = [
+            mockk:    "io.mockk:mockk:$mockkVersion",
+            jUnit: 'junit:junit:4.+'
+    ]
+
+}

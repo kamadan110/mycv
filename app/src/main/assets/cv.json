@@ -1,0 +1,47 @@
+{
+  "user": {
+    "name": "Michał Nowowiejski",
+    "email": "nowowiejski@gmail.com",
+    "phoneNumber": "55555555"
+  },
+  "address": {
+    "city":"Kraków",
+    "street":"Mickiewicza 5",
+    "postCode": "31-100",
+    "country": "Polska"
+  },
+  "education": {
+    "address": {
+      "city":"Kraków",
+      "street":"Szlak 33",
+      "postCode": "31-100",
+      "country": "Polska"
+    },
+    "schoolName": "Politechnika Krakowska"
+  },
+  "experiences": [
+    {
+      "role": "Android Developer",
+      "company": "Preglife Ab",
+      "address": {
+        "city":"Sztokholm",
+        "street":"Szlak 33",
+        "postCode": "31-100",
+        "country": "Szwecja"
+      },
+      "date": "2018-01-01",
+      "description": ""
+    },
+    {
+      "role": "Android Developer",
+      "company": "Corelogic",
+      "address": {
+        "city":"Krakow",
+        "street":"Szlak 33",
+        "postCode": "31-100",
+        "country": "Polska"
+      },
+      "date": "2017-01-01"
+    }
+  ]
+}
